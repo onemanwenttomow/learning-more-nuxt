@@ -1,6 +1,9 @@
 <template>
     <div class="container">
-        <nuxt-link to="/users">Users</nuxt-link>
+        <div class="">
+            <nuxt-link to="/users">Users</nuxt-link>
+        </div>
+        <button @click="$router.push(`/products`)">Products</button>
     </div>
 </template>
 
@@ -21,6 +24,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 

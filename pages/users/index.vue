@@ -1,23 +1,10 @@
 <template>
-    <div class="">
-        <h1>My users component</h1>
-        <input type="text" v-model="userId">
-        <button @click="loadUser">Load User</button>
-    </div>
+    <p>Please enter an id and click the button</p>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            userId: ''
-        }
-    },
-    methods: {
-        loadUser() {
-            this.$router.push(`/users/${this.userId}`)
-        }
-    }
+    layout: "users"
 }
 
 </script>
